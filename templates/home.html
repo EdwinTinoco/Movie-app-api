@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Home Movies</title>
+</head>
+<body>
+    <form action="/home" method="POST">
+        <p>What request do you want to choose?</p>
+        <p>Type one of these: <br>
+            post, get, put or delete.</p>
+        <input name="text">
+        <input type="submit" value="Submit">
+        </form>
+         
+        {% if text %}
+          You said: {{ text }}
+        {% endif %}
+</body>
+</html>
